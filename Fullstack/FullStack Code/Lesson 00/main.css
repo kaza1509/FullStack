@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+#sq {
+    border: 1px solid black;
+    width: 700px;
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.233);
+    flex-direction: column;
+    height: 700px;
+    /* justify-content: center; */ 
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sq div {
+    background-color: #ebebeb;
+    border: 1px solid red;
+    width: 200px;
+}
+
+.sq1 {
+    flex-basis: 200px;
+}
+
+.sq2 {
+    flex-basis: 200px;
+}
+
+.sq3 {
+    flex-basis: 200px;
+}

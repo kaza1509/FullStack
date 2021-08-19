@@ -1,0 +1,89 @@
+/* #ten_lop_hoc {
+    color: red;
+    font-size: 30px;
+}
+
+#loi_chao {
+    color: green;
+}
+
+.hoc_vien {
+    background: yellow;
+}
+
+#menu {
+    border: 2px solid red;
+}
+
+#menu li{
+    border-bottom: 1px solid green;
+}
+
+#menu li a {
+    color: orange;
+}
+
+#quang-cao div > p {
+    font-size: 25px;
+    color: red;
+} */
+
+/* #ds-hoc-vien li{
+    font-size: 25px;
+}
+
+li.hs-gioi {
+    color: orange;
+}
+
+.hk-tot {
+    color: green;
+}
+
+li.hs-gioi.hk-tot, .ten-lop {
+    color: red;
+}
+
+li, p {
+    background: yellow;
+} */
+
+/* ul#ds-hoc-vien li:first-child {
+    color: red;
+}
+
+ul#ds-hoc-vien li:last-child {
+    color: green;
+}
+
+ul#ds-hoc-vien li:nth-child(3) {
+    color: orange;
+} */
+
+/* ul#ds-hoc-vien li:nth-child(odd) {
+    background: yellow;
+}
+
+ul#ds-hoc-vien li:nth-child(even) {
+    background: gray;
+} */
+
+/* ul#ds-hoc-vien li:nth-child(2n+1) {
+    background: yellow;
+}
+
+ul#ds-hoc-vien li:nth-child(2n) {
+    background: gray;
+} */
+
+/* ul#ds-hoc-vien li:nth-child(3n) {
+    background: yellow;
+} */
+
+/* [type = text] {
+    color: red;
+} */
+
+#hoc-tro-cung ~ * {
+    color: red;
+}

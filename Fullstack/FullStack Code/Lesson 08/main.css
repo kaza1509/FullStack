@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ThuPhapBucThu;
+    src: url(./font/PaletteMosaic-Regular.ttf);
+}
+
+@font-face {
+    font-family: BenXuan;
+    src: url(./font/UVNBenXuan_B.TTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: BenXuan;
+    src: url(./font/UVNBenXuan_B.TTF);
+    font-weight: normal;
+}
+
+h1 {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-family: BenXuan, Arial, Helvetica, sans-serif;
+}
+
+p {
+    /* word-break: break-all; */
+    word-wrap: break-word;
+}
+
+#menu {
+    background-color: #ebebeb;
+}
+
+ul#menu li {
+    display: inline-block;
+}
+
+ul#menu li a {
+    display: inline-block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+}

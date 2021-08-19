@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+}  
+
+#wrapper div {
+    border: 1px solid black;
+    height: 200px;
+    width: 20%;
+}
+
+#wrapper div:nth-child(4n+1) {
+    flex-basis: 40%;
+}

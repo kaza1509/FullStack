@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+
+:root {
+    --text-color: #34568B;
+}
+
+body {
+    background-color: #F7CAC9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(60, 61, 61)
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#form-login {
+    /* background-color: ; */
+    margin: 100px auto;
+    height: 400px;
+    width: 700px;
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 7px 10px rgba(77, 72, 72, 0.801);
+}
+
+#pic {
+    width: 40%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#pic img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 29%;
+    left: 15%; */
+    top: 0px;
+    left: 0px;
+    /* box-shadow: 5px 7px 10px rgba(77, 72, 72, 0.801); */
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* #pic .fas {
+    font-size: 100px;
+    color: var(--text-color);
+    position: absolute;
+    top: 40%;
+    left: 25%;
+} */
+
+#login {
+    width: 60%;
+    background-color: #FF6F61;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#login .heading {
+    display: block;
+    font-size: 25px;
+    margin: 60px  0 30px 0;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px gray;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 5px;
+    background-color: #E7E7E7;
+    padding-left: 10px;
+    border: none;
+}
+
+.email {
+    margin-bottom: 6px;
+}
+
+#password {
+
+}
+
+#login .login-button {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 20px 0;
+    background-color: var(--text-color);
+    border: 1px solid transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#login .login-button:hover {
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#login .forgot p, #login .forgot a{
+    font-size: 12px;
+}
+
+#login .createAccount {
+    margin-top: 50px;
+}

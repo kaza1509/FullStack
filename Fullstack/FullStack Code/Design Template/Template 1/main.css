@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+    font-family: Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
+
+#main {
+    width: 88%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    /* width: 15%; */
+    width: 190px;
+    height: 340px;
+    background-color: #fff;
+}
+
+@media all and (max-width: 1390px) {
+    .wrapper {
+        margin-top: 10px;
+    }
+}
+
+.wrapper:hover {
+    /* box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%); */
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.wrapper .top img {
+    width: 100%;
+    height: 189px;
+}
+
+.wrapper .bottom {
+}
+
+.wrapper .text-content {
+    padding: 40px 5px 5px;
+}
+
+.wrapper .text-content > p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.wrapper .text-content > span {
+    display: block;
+}
+
+.wrapper .text-content .price01 > span:first-child {
+    text-decoration: underline;
+}
+
+.wrapper .text-content .price01 {
+    color: #F57224;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.wrapper .text-content .price02 {
+    color: gray;
+    font-size: 12px;
+}
+
+.wrapper .text-content .price02 > span:first-child {
+    text-decoration: line-through;
+    margin: 4px 0;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.wrapper .text-content i {
+    display: inline-block;
+    font-size: 10px;
+    color: #FACA51;
+}
+
+.wrapper .text-content .star {
+    display: inline-block;
+}
+
+.wrapper .text-content .where {
+    font-size: 12px;
+    float: right;
+    padding-top: 4px;
+    color: rgb(185, 179, 179);
+}
+
+

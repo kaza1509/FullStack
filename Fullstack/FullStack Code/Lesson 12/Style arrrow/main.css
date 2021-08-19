@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 100px;
+}
+
+button.cool-btn {
+    padding: 0 40px;
+    font-size: 12px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7px;
+    background-color: #565A5D;
+    color: #fff;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+button.cool-btn span:first-child {
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+button.cool-btn span:last-child {
+    border-radius: 0 7px 7px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 22px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4) url(./arrow.svg) no-repeat center;
+    background-size: 15px 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}

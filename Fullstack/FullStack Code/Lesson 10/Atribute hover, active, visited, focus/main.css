@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 30px;
+    /* color: green; */
+    text-decoration: none;
+}
+
+/* #title:hover {
+    color: red;
+} */
+
+#title:visited {
+    color: red;
+}
+
+#order {
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#order:active    {
+    background-color: red;
+}
+
+#order:focus {
+    background-color: blue;
+}
+
