@@ -131,17 +131,30 @@ Buổi 4: Các thao tác với mảng
 
 - Lấy ra một phần tử của array
 - Lấy ra số phần tử của array: length
+- Kiểm tra xem 1 phần tử có tồn tại không mảng không: includes(element) : 
+    . Tồn tại => true
+    . Không tồn tại => false
 - Xóa phần tử cuối cùng: pop
     . Là hàm trả về cũng là hàm tương tác(vừa lấy ra vừa xóa phần tử cuối)
-- Thêm 1 phần tử vào cuối mảng: push
-    . Trả về số lượng phần tử
+- Thêm 1 phần tử x vào cuối mảng: push(x)
+    . Trả về số lượng phần tử mảng
 - Thêm 1 phần tử vào đầu mảng: unshift();
 - Xóa phần tử đầu mảng: shift();
     . Là hàm trả về phần tử đầu tiên
-- Xóa phần tử trong mảng: splice(start, countDelete): 
-    . Trả về phần tử bị xóa
+- Xóa phần tử trong mảng: 
+    . splice(start, countDelete): trả về phần tử bị xóa
 - join(): cộng các phần tử lại
     . join('kí tự'): thêm vào (kí tự) sau mỗi phần tử khi cộng
+- Lấy vị trí đầu tiên mà phần tử x tồn tại trong mảng: 
+    . indexOf(x):
+        . x tồn tại thì trả về vị trí đầu tiên của nó
+        . x không tồn tại trong mảng thì trả về -1
+- Lấy vị trí cuối cùng mà phần tử x tồn tại trong mảng: 
+    . lastIndexOf(x):
+        . x tồn tại thì trả về vị trí cuối cùng của nó
+        . x không tồn tại trong mảng thì trả về -1
+
+
 - sort(): sắp xếp
 - reverse(): đảo ngược
 - forEach(): lặp qua tất cả các phần tử của mảng

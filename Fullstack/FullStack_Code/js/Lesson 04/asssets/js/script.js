@@ -93,7 +93,7 @@
 // });
 // console.log(allHoNguyen);
 
-var numbers = [1, 5, 6, 3];
+// var numbers = [1, 5, 6, 3];
 //Tính tổng các số
 // var tong = 0;
 // numbers.forEach(num => {
@@ -106,8 +106,77 @@ var numbers = [1, 5, 6, 3];
 // console.log(totol);
 
 //Có bao nhiêu số chẵn trong mảng
-var sumEven = numbers.reduce((sum, i) => {
-    return sum + (i % 2 == 0);
-},0);
+// var sumEven = numbers.reduce((sum, i) => {
+//     return sum + (i % 2 == 0);
+// },0);
+// console.log(sumEven);
 
-console.log(sumEven);
+//==================== Bài Tập ===================
+// -  BT1: cho 1 mảng các tên người, xuất ra mỗi người một lời chào
+// var arrName = ['nguyen tien khoi','bui van nguyen', 'nguyen phuong ly', 'ha manh tuan'];
+// arrName.forEach(x => {
+//     console.log('Hello '+x);
+// });
+
+// - BT2: cho một mảng các số xuất ra một mảng các số nhân đôi từ mảng cũ và sắp xếp tăng dần
+// var numbers = [4, 8, 2, 4, 3, 7, 1, 9, 77];
+// console.log(numbers.map(x => {
+//     return x*2;
+// }).sort((a,b) => {
+//     if(a>b) return 1;
+//     else return -1;
+// }
+// ));
+
+// - BT3: cho một mảng họ tên người đầy đủ hãy đến xem có bao nhiêu người có chữ N trong tên
+
+// var arrName = ['Nguyen tien khoi','bui van nguyen', 'Nguyen phuong ly', 'ha manh tuan'];
+// var count = 0;
+// var countN = arrName.filter(x => {
+//     if(x.includes('N'))
+//         count++;
+//     return count;
+// })
+// console.log(count);
+
+// var countN = arrName.reduce((count,element) => {
+//     if(element.includes('N'))
+//         count++;
+//     return count;
+// },0);
+
+// console.log(countN);
+
+// BT4: cho một mảng số, xuất ra mảng các số đã được thêm 2 và không chia hết cho 3
+
+// var numbers = [4, 8, 2, 4, 3, 7, 1, 9, 77];
+// var addTwo = numbers.map(x => {
+//     return x + 2;
+// })
+// var dataProcess = addTwo.filter(x => {
+//     return x%3!=0;
+// });
+// console.log(dataProcess);
+
+// BT5: cho 1 mảng các chiều cao (cm). 
+//         . Điều kiện:
+//             . cao < 165: size S
+//             . cao 165 -> 170: size M
+//             . cao > 170: size L
+//         . Đếm xem có bao nhiêu người mặc size: S
+//         . Đếm xem có bao nhiêu người mặc size: M
+//         . Đếm xem có bao nhiêu người mặc size: L
+
+var height = [145, 166, 170, 154, 164, 180];
+var sizeS = 0; sizeM = 0; sizeL = 0;
+height.forEach(x => {
+    if(x < 165)
+        sizeS++;
+    else if(x > 170)
+        sizeL++;
+    else
+        sizeM++;
+});
+console.log('Size S has '+sizeS+' people');
+console.log('Size M has '+sizeM+' people');
+console.log('Size L has '+sizeL+' people');
