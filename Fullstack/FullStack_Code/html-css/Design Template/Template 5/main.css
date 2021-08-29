@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#button label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+    border: 1px solid #333;
+}
+
+#button label:active {
+    background-color: #fff;
+}
+
+#button {
+    position: absolute;
+    bottom: 30px;
+    left: 49%;
+}
+
+input {
+    display: none;
+}
+
+img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+input:checked + img {
+    display: block;
+}
+
+#slider {
+    height: 100%;
+}
+
+#main {
+    width: 980px;
+    margin: 50px auto;
+    border: 2px solid #000;
+    height: 500px;
+    position: relative;
+}

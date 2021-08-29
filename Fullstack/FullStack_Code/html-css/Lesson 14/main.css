@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 980px;
+    margin: 20px auto;
+    font-family: Helvetica, sans-serif;
+}
+
+.container .block-header {
+    border-bottom: 1px solid #00acc1;
+}
+
+.container .block-header h3 {
+    display: inline-block;
+    background-color: #00acc1;
+    color: white;
+    font-weight: normal;
+    padding: 7px 15px;
+    font-size: 15px;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container ul li {
+    flex-basis: 25%;
+    display: inline-block;
+    background-image: url(./icons.png);
+    background-repeat: no-repeat;
+}
+
+.container ul li a {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 3px 0;
+    padding-left: 25px;
+}
+
+.container ul li a:hover {
+    color: #00acc1;
+    font-weight: bold;
+}
+
+.container ul li:nth-child(1) {
+    background-position: 0px 0px;
+}
+
+.container ul li:nth-child(2) {
+    background-position: 0px -52px;
+}
+
+.container ul li:nth-child(3) {
+    background-position: 0px -104px;
+}
+
+.container ul li:nth-child(4) {
+    background-position: 0px -156px;
+}
+
+.container ul li:nth-child(5) {
+    background-position: 0px -218px;
+}
+
+.container ul li:nth-child(6) {
+    background-position: 0px -254px;
+}
+
+.container ul li:nth-child(6):hover {
+    /* background-position: 0px -218px; */
+}
+
+.abc {
+    background-image: url(https://laptrinhcuocsong.com/images/blog-thumb.png);
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+
+.abc:hover {
+    background-image: url(https://laptrinhcuocsong.com/images/thumbnail_default.png);
+}

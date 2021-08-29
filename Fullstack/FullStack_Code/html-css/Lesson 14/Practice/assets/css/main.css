@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+#main {
+    width: 960px;
+    margin: 50px auto;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #00acc1;
+}
+
+header h3 {
+    display: inline-block;
+    background-color: #00acc1;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 4px 9px;
+}
+
+#main ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main li {
+    flex-basis: 25%;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#main a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+#main a:hover {
+    color: #00acc1;
+}
+
+#main ul li:nth-child(1) {
+    background-position: 0px calc(-52px);
+}
+
+#main ul li:nth-child(2) {
+    background-position: 0px calc(-104px);
+}
+
+#main ul li:nth-child(3) {
+    background-position: 0px calc(-156px);
+}
+
+#main ul li:nth-child(4) {
+    background-position: 0px calc(-208px);
+}
+
+#main ul li:nth-child(5) {
+    background-position: 0px calc(-260px);
+}
+
+#main ul li:nth-child(6) {
+    background-position: 0px calc(-312px);
+}
+
+#main ul li:nth-child(7) {
+    background-position: 0px calc(-364px);
+}
+
+#main ul li:nth-child(8) {
+    background-position: 0px calc(-416px);
+}
+
+#main ul li:nth-child(9) {
+    background-position: 0px calc(-468px);
+}
+
+#main ul li:nth-child(10) {
+    background-position: 0px calc(-520px);
+}
+
+#main ul li:nth-child(11) {
+    background-position: 0px calc(-572px);
+}
+
+#main ul li:nth-child(12) {
+    background-position: 0px calc(-624px);
+}
+
+#main ul li:nth-child(13) {
+    background-position: 0px calc(-676px);
+}
+
+#main ul li:nth-child(14) {
+    background-position: 0px calc(-728px);
+}
+
+#main ul li:nth-child(15) {
+    background-position: 0px calc(-780px);
+}
+
+#main ul li:nth-child(16) {
+    background-position: 0px calc(-832px);
+}
+
+#main ul li:nth-child(17) {
+    background-position: 0px calc(-884px);
+}
+
+#main ul li:nth-child(18) {
+    background-position: 0px calc(-936px);
+}
+
+#main ul li:nth-child(19) {
+    background-position: 0px calc(-982px);
+}

@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+} 
+
+a:link {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2.has-block-first {
+    padding-left: 24px;
+}
+
+h2.has-block-first::before {
+    content: ' ';
+    width: 10px;
+    height: 35px;
+    display: inline-block;
+    background-color: #e1e6ea;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    word-spacing: 3px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+
+/* header */
+
+header {
+    height: 81px;
+    background-color: #1d2126;
+    line-height: 81px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container ul li {
+    display: inline-block;
+}
+
+header .container ul li a {
+    display: inline-block;
+    height: 30px;
+    line-height: 26px;
+    padding: 0 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #a4aead;
+    border: 2px solid transparent;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+header .container ul li a:hover {
+    border-color: #5b6168;
+}
+
+header .container ul li a.active {
+    border-color: #23b7a4;
+    color: #23b7a4;
+}
+
+/* hero */
+#hero {
+    background-image: url(./images/banner.jpg);
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero .container {
+    padding-top: 222px;
+    position: relative;
+    height: 660px;
+}
+
+#hero .container > div {
+    width: 585px;
+}
+
+#hero .container h2 {
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+#hero .container p {
+    margin-bottom: 36px;
+    color: #ccd0d7;
+}
+
+#hero .container div a {
+    display: inline-block;
+    color: #fff;
+    height: 44px;
+    border: 2px solid #fff;
+    line-height: 40px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 11px;
+}
+
+#hero .container div a:last-child {
+    margin-right: 0px;
+}
+
+#hero .container div a:hover {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+
+#hero .container ul li {
+    display: inline-block;
+}
+
+#hero .container ul {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+}
+
+#hero .container ul li {
+    display: inline-block;
+}
+
+#hero .container ul li a {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
+    text-indent: -10000px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+#hero .container ul li:last-child a {
+    margin-right: 0px;
+}
+
+#hero .container ul li a.active {
+    background-color: #fff;
+}
+
+/* about */
+#about {
+    border-bottom: 2px solid #dde1e4;
+    height: 610px;
+}
+
+#about .container {
+    padding-top: 86px;
+}
+
+#about .container h2 {
+    margin-bottom: 47px;
+}
+
+#about .container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .container > div > div:first-child {
+    width: 654px;
+}
+
+#about .container > div > div:last-child {
+    width: 457px;
+}
+
+#about .container > div > div p {
+    color: #8d8f92;
+    margin-bottom: 25px;
+}
+
+#about .container ul {
+    padding-top: 29px;
+}
+
+#about .container ul li {
+    display: inline-block;
+}
+
+#about .container ul li a {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: #c8cdd0;
+    text-indent: -10000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about .container ul li:nth-child(1) a {
+    background-image: url(./images/socials/facebook.png);
+}
+
+#about .container ul li:nth-child(2) a {
+    background-image: url(./images/socials/twitter.png);
+}
+
+#about .container ul li:nth-child(3) a {
+    background-image: url(./images/socials/google.png);
+}
+
+#about .container ul li:nth-child(4) a {
+    background-image: url(./images/socials/dribble.png);
+}
+
+#about .container ul li:nth-child(5) a {
+    background-image: url(./images/socials/be.png);
+}
+
+#about .container ul li a:hover {
+    background-color: #d0d5d9;
+}
+
+#about .container ol {
+    counter-reset: about;
+}
+
+#about .container ol li {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+
+#about .container ol li::before {
+    counter-increment: about;
+    content: counters(about, '.', decimal-leading-zero);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #23b7a4;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#about .container ol h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+/* team  */ 
+#team {
+    padding-top: 80px;
+}
+
+#team-list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    /* flex-wrap: wrap; */
+}
+
+#team-list > div:hover  .info {
+    background-color: #3a454d;
+}
+
+#team-list > div img {
+    display: block;
+}
+
+#team-list .info { 
+    padding-left: 20px;
+    background-color: #e1e6ea;
+}
+
+#team-list .info h4 { 
+    font-size: 16px;
+    color: #292f36;
+    text-transform: uppercase;
+    padding-top: 21px;
+    font-weight: normal;
+}
+
+#team-list .info p {
+    font-size: 14px;
+    padding-bottom: 21px;
+    color: #8d8f92;
+    font-weight: normal;
+}
+
+#team-list > div:hover p, 
+#team-list > div:hover h4 {
+    color: #fff;
+}
+
+#team-list .first {
+    position: relative;
+}
+
+#team-list .mask {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#team-list .mask ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+#team-list .mask li {
+    margin-right: 1px;
+}
+
+#team-list .mask li a {
+    display: inline-block;
+    text-indent: -100000px;
+    height: 50px;
+    width: 50px;
+    background-color: #3a454d;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 14px;
+}
+
+#team-list .mask li:nth-child(1) a {
+    background-image: url(./images/socials/twitter.png);
+}
+
+#team-list .mask li:nth-child(2) a {
+    background-image: url(./images/socials/facebook.png);
+}
+
+#team-list .mask li:nth-child(3) a {
+    background-image: url(./images/socials/linkin.png);
+}
+
+#team-list .mask a:hover {
+    background-color: #4e5a62;
+}
+
+
+#team-list > div:hover .mask {
+    display: block;
+}
+

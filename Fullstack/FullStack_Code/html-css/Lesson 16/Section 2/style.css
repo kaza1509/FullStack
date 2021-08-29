@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+header {
+    background-color: #1d2126;
+    height: 81px;
+    line-height: 81px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container ul li{
+    display: inline-block;
+    margin-left: 16px;
+}
+
+header .container ul li:first-child {
+    margin-left: 0px;
+}
+
+header .container ul li a {
+    color: #a4aead;
+    font-size: 14px;
+    border: 2px solid transparent;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+header .container ul li a:hover {
+    border-color: #5b6168;
+}
+
+header .container ul li a.active {
+    color: #23b7a4;
+    border-color: #23b7a4;
+}
+
+/* hero */
+#hero {
+    height: 660px;
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3a454d;
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+#hero .container > div:first-child {
+    max-width: 585px;
+    display: inline-block;
+}
+
+#hero .container h2 {
+    color: #fff;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 26px;
+}
+
+#hero .container p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ccd0d7;
+    font-weight: normal;
+    margin-bottom: 36px;
+}
+
+#hero .container div a {
+    display: inline-block;
+    height: 44px;
+    line-height: 40px;
+    padding: 0px 24px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 11px;
+}
+
+#hero .container div a:hover {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+
+#hero .container ul {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+}
+
+#hero .container ul li {
+    display: inline-block;
+    margin-left: 9px;
+}
+
+#hero .container ul li:first-child {
+    margin-left: 0px;
+}
+
+#hero .container ul li a.current {
+    background-color: #fff;
+}
+
+#hero .container ul li a{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-indent: -10000000px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}

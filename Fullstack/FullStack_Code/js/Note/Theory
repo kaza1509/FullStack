@@ -1,0 +1,171 @@
+Buổi 1: Tìm hiểu về javascript p1
+- Chạy trên trình duyệt
+    + js 
+    + es6
+- Chạy trên server
+- console.log(thong tin): in ra thông tin gì đó
+- js hoạt động như thế nào?
+    + Chạy qua js engine
+    + Đối tượng window:
+        . Tất cả code js đều năm trong đối tượng window
+    + Đối tượng document:
+        . Là đối tượng đại diện cho tài liệu(chứa code html)
+    + Biến là vùng bộ nhớ để lưu trữ dữ liệu:
+        + Cách khai báo biến: 
+            . var [tên biến] = [giá trị của biến];
+            . let [tên biến] = [giá trị của biến]; (es6)
+
+- Mỗi thẻ html sẽ bằng là 1 cái biến ở bên dưới js
+- Viết html => tạo ra cái biến
+- Viết css => thay đổi thuộc tính của các biến
+
+---------------------------------------------------------
+
+Buổi 2: Tìm hiểu về javascript p2
+
+- Các kiểu của biến:
+    + Chuỗi String là 1 tập hợp các kí tự
+    + Number:
+    + Kiểu array: 
+        . Khai báo mảng: var/let [name aray] = [];
+        . Mảng là 1 biến chưa được nhiều giá trị
+        . Mỗi giá trị người ta gọi là phần tử hay item
+        . Thông thường, code pro => tạo ra mảng có cùng kiểu dữ liệu
+        . Mảng đặc biệt: 
+            . Mảng không có phần tử
+            . Mảng có các phần tử là mảng (một mảng các mảng) => mảng hai chiều
+            . Mảng 3 chiều: mảng của mảng của mảng
+    + Object: Đối tượng là 1 cái thể hiện của cái gì đó trong thực tế
+        . Sử dụng cặp dấu a = {....} để tạo ra đối tượng
+        . Thuộc tính(properties)
+    + Undefined: là một biến chưa được tạo ra, chưa được khai báo hoặc là chưa được gán giá trị.
+    + null: đã khai báo nhưng chưa biết gán giá trị gì, nó không làm cái gì hết
+    + nan: not a number( xử lí tính toán xảy ra 1 cái gì đó)
+    + Boolean: chỉ có hai giá trị đại diện, đúng sai hoặc bật tắt (true/false)
+    + Hằng số: const (const PI = 3.14)
+        . Là 1 vùng bộ nhớ có tên => không thể thay đổi được trong suốt chương trình
+        . Trang web cần đăng kí/đăng nhập => kích hoạt tài khoản => role là quyền đăng nhập được khai báo là const 1|2|3|...
+- Cách chạy của js:
+    + Chạy trên trình duyệt
+        . js dom
+    + Chạy trên server : nodejs
+        . pakage: gói riêng chạy cho server
+
+---------------------------------------------------------
+
+Buổi 3: Các thao tác với biến
+- Các thao tác xử lí chuỗi:
+    + Lấy ra số lượng kí tự: .length
+    + Cộng hai chuỗi (nối chuỗi) => +
+    + Viết hoa: toUpperCase()
+    + Viết thường: to LowerCase();
+    + Cắt chuỗi 1 đoạn từ start ->end: 
+        . substring(start, end): cắt từ vị trí start đến vị trí end
+        . Lưu ý: .substring(6,-8) = .substring(0,6);
+                 .substring(6,4) = .substring(4,6);
+                 .substring(start): cắt từ start đến cuối
+    + Cắt chuỗi từ vị trí và chiều dài: 
+        . substr(start, length): cắt từ vị trí start length kí tự (2 đối số)
+        . substr(start):
+            . start >= 0: cắt từ vị trí start cho đến cuối chuỗi (1 đối số) 
+            . start < 0: cắt từ bị trí length - abs(start) đến hết
+        slice(start, end): cắt giống substring
+    + Thay thế chuỗi: 
+        . replace(old, new);: thay thế chuỗi old đầu tiên bằng chuỗi new
+        . replace(/old/g, new);: thay thế tất chuỗi old bằng chuỗi new
+    + Xóa kí tự trống hai bên: trim()
+    + indexOf(string): Tìm vị trí đầu tiên xuất hiện chữ cái, kí tự string (từ 0 -> length() - 1)
+    + lastIndexOf(string): Tìm vị trí cuối cùng xuất hiện chữ cái, kí tự string (từ 0 -> length() - 1)
+    + chatAt(index): lấy kí tự thứ index
+    + split: tách chuỗi theo kí tự nào đó
+        . split(ki_tu_cat) -> trả về 1 mảng kí tự đã cắt
+
+- Các toán tử:
+    . Toán tử toán học: cộng trừ nhân chia
+    . Toán tử logic
+        + and
+        + or
+        + nor
+        + xor
+        + not
+    . Toán tử biswise
+
+- Các thao tác xử lí number:
+    . Cộng: +
+    . Trừ: -
+    . Nhân: *
+    . Chia: /
+    . Chia lấy dư: %
+
+- Hàm function
+    + Là 1 đoạn code thực hiện 1 công việc nào đó
+    + Hàm có thể gọi nhiều lần
+    + Hàm có thể nhận các tham số(biến đầu vào)
+    + Truyền biến vào hàm phải theo thứ tự
+    + Đầu ra: return
+        . Khi chương trình gặp return thì dừng hàm luôn
+    + Tham số mặc định:
+        . Không phải trình duyệt nào cũng hỗ trợ
+    + Hàm không tên(anonymous function)
+    + Hàm mũi tên(arrow function)
+        . Nếu như chỉ có 1 tham số thì không cần ()
+        . Không hỗ trợ các trình duyệt cũ
+    => Dùng buid tool cho trình duyệt cũ
+
+    + Tham số là hàm
+
+- Mọi thứ trong js đều là biến
+
+- Các thao tác với array 
+    + sort()
+    + reverse()
+    + reduce()
+    + map()
+    + forEach()
+    + every()
+    + filter()
+
+---------------------------------------------------------
+
+Buổi 4: Các thao tác với mảng
+
+- Lấy ra một phần tử của array
+- Lấy ra số phần tử của array: length
+- Xóa phần tử cuối cùng: pop
+    . Là hàm trả về cũng là hàm tương tác(vừa lấy ra vừa xóa phần tử cuối)
+- Thêm 1 phần tử vào cuối mảng: push
+    . Trả về số lượng phần tử
+- Thêm 1 phần tử vào đầu mảng: unshift();
+- Xóa phần tử đầu mảng: shift();
+    . Là hàm trả về phần tử đầu tiên
+- Xóa phần tử trong mảng: splice(start, countDelete): 
+    . Trả về phần tử bị xóa
+- join(): cộng các phần tử lại
+    . join('kí tự'): thêm vào (kí tự) sau mỗi phần tử khi cộng
+- sort(): sắp xếp
+- reverse(): đảo ngược
+- forEach(): lặp qua tất cả các phần tử của mảng
+    . Không trả về
+- map(): bản đồ là bản sao chép của thực tế + 1 chút xử lí => map sao chép 1 mảng sau khi chạy qua 1 hàm
+- filter(): cũng sao chép nhưng sao chép có chọn lọc + xử lí
+    . Cách chọn: nếu hàm trả về true thì lấy còn trả về false thì bỏ qua
+    . Dùng filter để quyết định xem thử 1 phần tử có được lấy hay không 
+- every(): kiểm tra toàn bộ mảng và trả về true hoặc false
+    . Trả về true khi tất cả đều true
+    . Trả về false khi 1 trong các phần tử false
+
+- reduce(fn(reducer), strat_value): Lấy kết quả vòng lặp trước là tham số cho vòng lặp sau
+
+- Bài tập:
+    + BT1: cho 1 mảng các tên người, xuất ra mỗi người một lời chào
+    + BT2: cho một mảng các số xuất ra một mảng các số nhân đôi từ mảng cũ và sắp xếp tăng dần 
+    + BT3: cho một mảng họ tên người đầy đủ hãy đến xem có bao nhiêu người có chữ N trong tên
+    + BT4: cho một mảng số, xuất ra mảng các số đã được thêm 2 và không chia hết cho 3
+    + BT5: cho 1 mảng các chiều cao (cm). 
+        . Điều kiện:
+            . cao < 165: size S
+            . cao 165 -> 170: size M
+            . cao > 170: size L
+        . Đếm xem có bao nhiêu người mặc size: S
+        . Đếm xem có bao nhiêu người mặc size: M
+        . Đếm xem có bao nhiêu người mặc size: L
